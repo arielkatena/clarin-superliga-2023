@@ -39,7 +39,7 @@
 
   .share {
     &-facebook {
-      background: url("#{$URL}/assets/icon-facebook.svg") center center no-repeat;
+      background: url("#{$URL}assets/icon-facebook.svg") center center no-repeat;
     }
 
     &-facebook:hover {
@@ -47,7 +47,7 @@
     }
 
     &-twitter {
-      background: url("#{$URL}/assets/icon-twitter.svg") center center no-repeat;
+      background: url("#{$URL}assets/icon-twitter.svg") center center no-repeat;
     }
 
     &-twitter:hover {
@@ -55,7 +55,7 @@
     }
 
     &-whatsapp {
-      background: url("#{$URL}/assets/icon-whatsapp.svg") center center no-repeat;
+      background: url("#{$URL}assets/icon-whatsapp.svg") center center no-repeat;
     }
 
     &-whatsapp:hover {

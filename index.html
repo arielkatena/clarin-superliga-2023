@@ -13,20 +13,20 @@
   <style>
     @font-face {
       font-family: 'Velino-Sans-Bold';
-      src: url('fonts/Velino-Sans-Bold.woff2') format('woff2'),
-        url('fonts/Velino-Sans-Bold.woff') format('woff');
+      src: url('https://clarin.com/redaccionfiler/clarin/desarrollo/fonts/VelinoSans-Bold.woff2') format('woff2'),
+        url('https://clarin.com/redaccionfiler/clarin/desarrollo/fonts/VelinoSans-Bold.woff') format('woff');
     }
 
     @font-face {
       font-family: 'Velino-Sans-Book';
-      src: url('fonts/Velino-Sans-Book.woff2') format('woff2'),
-        url('fonts/Velino-Sans-Book.woff') format('woff');
+      src: url('https://clarin.com/redaccionfiler/clarin/desarrollo/fonts/VelinoSans-Book.woff2') format('woff2'),
+        url('https://clarin.com/redaccionfiler/clarin/desarrollo/fonts/VelinoSans-Book.woff') format('woff');
     }
 
     @font-face {
       font-family: 'Velino-Headline-Bold';
-      src: url('fonts/VelinoHeadline-Bold.woff2') format('woff2'),
-        url('fonts/VelinoHeadline-Bold.woff') format('woff');
+      src: url('https://clarin.com/redaccionfiler/clarin/desarrollo/fonts/VelinoHeadline-Bold.woff2') format('woff2'),
+        url('https://clarin.com/redaccionfiler/clarin/desarrollo/fonts/VelinoHeadline-Bold.woff') format('woff');
     }
 
     :root {
@@ -39,13 +39,12 @@
   <link rel="stylesheet" href="https://use.typekit.net/hvg7qje.css">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://clarin.com/redaccionfiler/clarin/desarrollo/2023/deportes/superliga/styles.css">
 
   <!-- #especial -->
   <div class="hero">
-    <h1><span>LPF 2023:</span> Guía interactiva: todos los datos de los 1.080 jugadores y los 26 equipos que juegan la
-      Liga Profesional de Fútbol</h1>
-    <p class="bajada">Club por club, plantel por plantel, jugador por jugador, todos los datos al día.</p>
+    <h1>Los 28 planteles</h1>
+    <p class="bajada">Los datos de todos los jugadores activos en el Torneo de la Liga Profesional de Fútbol.</p>
   </div>
   <div class="spinner-box" style="opacity: 1; transition: .35s">
     <div class="circle-border">
@@ -115,8 +114,39 @@
     </div>
   </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
-  <script src="scripts.js"></script>
+  <script src="https://clarin.com/redaccionfiler/clarin/desarrollo/2023/deportes/superliga/scripts.js"></script>
 
+  <div>
+    <div>
+      <div class="--fullview"></div>
+    </div>
+  </div>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+      function forceWidthElem(element) {
+        const targets = document.querySelectorAll(`.${element}`);
+        const temp = document.createElement('div');
+        const body = document.body;
+        let scrollbarWidth;
+
+        temp.style = `position: fixed; top: -100px; width: 10px; height: 10px; overflow: scroll;`;
+        body.appendChild(temp);
+        scrollbarWidth = temp.offsetWidth - temp.clientWidth;
+        body.removeChild(temp);
+
+        targets.forEach(el =>
+          el.parentNode.style = `
+          position: relative; left: 0; top: 0; 
+          width: calc(100vw - ${scrollbarWidth}px); 
+          margin-left: calc(-50vw + 50% + ${scrollbarWidth / 2}px);
+        `);
+      }
+
+      forceWidthElem('--fullview');
+    });
+
+  </script>
 </body>
 
 </html>

@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       const nombre = e.target.dataset.name;
       const imagen = e.target.dataset.cod.toUpperCase();
       document.querySelector('.plantel__header').innerHTML = ` 
-      <img src='https://www.clarin.com/redaccionfiler/clarin/desarrollo/2020/deportes/superliga/escudos/${imagen}.svg'>
+      <img src='https://clarin.com/redaccionfiler/clarin/desarrollo/2023/deportes/superliga/escudos/${imagen}.svg'>
       <h3>${nombre}</h3>  
     `;
 
