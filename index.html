@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Velino -->
+  <style>
+    @font-face {
+      font-family: 'Velino-Sans-Bold';
+      src: url('fonts/Velino-Sans-Bold.woff2') format('woff2'),
+        url('fonts/Velino-Sans-Bold.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Velino-Sans-Book';
+      src: url('fonts/Velino-Sans-Book.woff2') format('woff2'),
+        url('fonts/Velino-Sans-Book.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Velino-Headline-Bold';
+      src: url('fonts/VelinoHeadline-Bold.woff2') format('woff2'),
+        url('fonts/VelinoHeadline-Bold.woff') format('woff');
+    }
+
+    :root {
+      --secondary-font-regular: 'Velino-Sans-Book', Arial, Helvetica, sans-serif;
+      --secondary-font-bold: 'Velino-Sans-Bold', Arial, Helvetica, sans-serif;
+    }
+  </style>
+
+  <!-- Adelle -->
+  <link rel="stylesheet" href="https://use.typekit.net/hvg7qje.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- #especial -->
+  <div class="hero">
+    <h1><span>LPF 2023:</span> Guía interactiva: todos los datos de los 1.080 jugadores y los 26 equipos que juegan la
+      Liga Profesional de Fútbol</h1>
+    <p class="bajada">Club por club, plantel por plantel, jugador por jugador, todos los datos al día.</p>
+  </div>
+  <div class="spinner-box" style="opacity: 1; transition: .35s">
+    <div class="circle-border">
+      <div class="circle-core"></div>
+    </div>
+  </div>
+  <div class="clubs">
+    <div class="clubs">
+    </div>
+  </div>
+  <div class="plantel js-modal" style="transform: translateX(100%); opacity: 0; pointer-events: none;">
+    <a class="plantel__close js-close">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+        <g id="iconClose">
+          <path
+            d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+        </g>
+      </svg>
+    </a>
+    <div class="plantel__content">
+      <div class="plantel__header">
+        <h3></h3>
+      </div>
+      <div class="scrollH">
+        <table class="plantel__table">
+          <thead>
+            <tr>
+              <th>Posición</th>
+              <th>Jugador</th>
+              <!-- <th>Fecha/Lugar Nac</th> -->
+              <th colspan="2" class="plantel__table--totales">Totales</th>
+              <th colspan="2" class="plantel__table--th">Torneo Loc</th>
+              <th colspan="2" class="plantel__table--th">Torneo 2023</th>
+              <th colspan="2" class="plantel__table--th">Copas Loc</th>
+              <th colspan="2" class="plantel__table--th">Copas Int</th>
+              <th colspan="2" class="plantel__table--th">Ascenso</th>
+              <th colspan="2" class="plantel__table--th">Extranjero</th>
+              <th colspan="2" class="plantel__table--th">Selección</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <!-- <th></th> -->
+              <th style="text-align: center;">pj</th>
+              <th style="text-align: center;">g</th>
+              <th style="text-align: center;">pj</th>
+              <th style="text-align: center;">g</th>
+              <th style="text-align: center;">pj</th>
+              <th style="text-align: center;">g</th>
+              <th style="text-align: center;">pj</th>
+              <th style="text-align: center;">g</th>
+              <th style="text-align: center;">pj</th>
+              <th style="text-align: center;">g</th>
+              <th style="text-align: center;">pj</th>
+              <th style="text-align: center;">g</th>
+              <th style="text-align: center;">pj</th>
+              <th style="text-align: center;">g</th>
+              <th style="text-align: center;">pj</th>
+              <th style="text-align: center;">g</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+  <script src="scripts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+$phone-m: 375px;
+$phone-l: 411px;
+$landscape: 480px;
+$tablet-s: 768px;
+$tablet-l: 1024px;
+$desktop-s: 1256px;
+$desktop-l: 1440px;
+$desktop-xl: 1600px;
+
+$color-1: #fc1c66;
+$color-2: #f58a12;
+$color-3: #56d5b4;
+$color-dark: #191919;
+
+:root {
+  --gradient: linear-gradient(0deg, rgba(86, 213, 180, 1) 0%, rgba(245, 138, 18, 1) 50%, rgba(252, 28, 102, 1) 100%);
+}
+
+/* Firefox */
+* {
+  --scrollbar-width: 3px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  width: var(--scrollbar-width);
+  height: 2px;
+  width: 1px;
+  background: #ffffff00;
+
+  @media (min-width: $landscape) {
+    background: #ffffff00;
+  }
+}
+
+*::-webkit-scrollbar-thumb {
+  width: var(--scrollbar-width);
+  height: 2px;
+  width: 1px;
+  border-radius: 0px;
+  border: none;
+  background: #fc1c66;
+  background: #f58a12;
+  background: #56d5b400;
+}
+
+.especial {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  background: var(--gradient);
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-s) {
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+    outline: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 400 !important;
+  }
+}
+
+.--center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  @media (min-width: $landscape) {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.--shadow {
+  // box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 30px, rgba(0, 0, 0, 0.15) 0px 10px 18px;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+body {
+  .--bgcolor-1 {
+    background: $color-1 !important;
+  }
+  .--bgcolor-2 {
+    background: $color-2 !important;
+  }
+  .--bgcolor-3 {
+    background: $color-3 !important;
+  }
+}

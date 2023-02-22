@@ -1,0 +1,94 @@
+.hero {
+  width: 100%;
+  max-width: 1160px;
+  min-height: 400px;
+  margin: 120px auto 60px auto;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+@media (min-width: 720px) {
+  .hero {
+    margin: 60px auto 60px auto;
+  }
+}
+
+.hero h1 {
+  font: 400 10vw/1.1 "Portada-Light", Georgia, "Times New Roman", Times, serif;
+  letter-spacing: -0.01em;
+  margin: 0 auto 30px auto;
+  width: 95%;
+}
+
+@media (min-width: 480px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 58px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero h1 {
+    font-size: 58px;
+  }
+}
+
+.hero h1 span {
+  color: #d80026;
+  display: block;
+}
+
+.hero .bajada {
+  font: 400 6vw/1.35 "Portada-Light", Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 0.01em;
+  margin: 5px auto 30px auto;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #777;
+}
+
+@media (min-width: 480px) {
+  .hero .bajada {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero .bajada {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero .bajada {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero .bajada {
+    font-size: 22px;
+  }
+}

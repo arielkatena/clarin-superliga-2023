@@ -1,0 +1,345 @@
+.clubs {
+  position: relative;
+  display: flex;
+  flex-direction: revert;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto 60px auto;
+  overflow: hidden;
+}
+
+.clubs h1 {
+  font-family: "Portada-Light", Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 10px auto 30px auto;
+  color: #333;
+  width: 80%;
+}
+
+@media (min-width: 720px) {
+  .clubs h1 {
+    font-size: 30px;
+  }
+}
+
+.clubs h2 {
+  font-family: "Portada-Light", Georgia, "Times New Roman", Times, serif;
+  font-size: 19px;
+  margin: 10px auto 20px auto !important;
+  color: #333;
+  text-align: center;
+}
+
+.clubs hr,
+.clubs .ui--info-line {
+  height: 1px !important;
+  border: none !important;
+  margin: 20px auto 30px auto !important;
+  width: 200px;
+  background: #c9c6c6;
+}
+
+.clubs p.bajada {
+  margin: 10px auto 30px auto !important;
+  font-family: "adelle-sans", Arial;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.15;
+  text-align: center;
+  max-width: 600px;
+  color: #777;
+}
+
+.clubs .club {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+  width: calc((100% / 1) - 16px);
+  min-height: 130px;
+  margin: 0 8px;
+  border-bottom: 1px solid #ddd;
+  transition: 0.25s;
+  cursor: pointer;
+  position: relative;
+}
+
+@media (min-width: 720px) {
+  .clubs .club {
+    flex-direction: column;
+    justify-content: center;
+    width: calc((100% / 3) - 16px);
+    height: 320px;
+    margin: 8px;
+    padding: 0 0 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .clubs .club {
+    width: calc((100% / 4) - 16px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .clubs .club {
+    width: calc((100% / 4) - 16px);
+  }
+}
+
+@media (min-width: 720px) {
+  .clubs .club:hover {
+    opacity: 1 !important;
+    border: 1px solid #aaa;
+    transform: translateY(-8px);
+    transition: 0.25s;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .clubs .club:hover a {
+    border-color: #f4f4f4;
+    background: #f4f4f4;
+  }
+
+  .clubs .club:hover a .club__total {
+    background: #009bdb;
+    color: #fff;
+  }
+
+  .clubs .club:hover img {
+    transform: translateY(-30px);
+    transition: 0.4s;
+  }
+
+  .clubs .club:hover .club__info {
+    transform: translateY(-30px);
+    transition: 0.4s;
+  }
+
+  .clubs .club:hover .club__meta {
+    opacity: 1;
+  }
+}
+
+.clubs .club.--selected {
+  opacity: 1;
+  pointer-events: none;
+  transition: opacity 0.4s;
+}
+
+.clubs .club img {
+  display: block;
+  width: auto;
+  max-width: 50px;
+  max-height: 70px;
+  margin: 10px 5px 10px 15px;
+  transition: 0.4s;
+  pointer-events: none;
+}
+
+@media (min-width: 720px) {
+  .clubs .club img {
+    max-width: 90px;
+    max-height: 90px;
+    margin: 30px 0 0 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .clubs .club img {
+    max-width: 90px;
+    max-height: 90px;
+  }
+}
+
+.clubs .club img::after {
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  background: #999;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.clubs .club .--dt span,
+.clubs .club .--titles span {
+  color: #999;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.clubs .club__info {
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  pointer-events: none;
+  transition: 0.4s;
+  width: 100%;
+}
+
+@media (min-width: 720px) {
+  .clubs .club__info {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 10px;
+  }
+}
+
+.clubs .club__info h3 {
+  display: block;
+  margin: 0;
+  font-family: "adelle-sans", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.25;
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 10px 0;
+}
+
+@media (min-width: 375px) {
+  .clubs .club__info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 720px) {
+  .clubs .club__info h3 {
+    width: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .clubs .club__info h3 {
+    font-size: 21px;
+  }
+}
+
+.clubs .club__meta {
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+@media (min-width: 720px) {
+  .clubs .club__meta {
+    opacity: 0;
+  }
+}
+
+.clubs .club__meta p {
+  margin: 5px 0 0 0;
+  font-family: "adelle-sans", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
+  color: #666;
+}
+
+.clubs .club a {
+  font-family: "adelle-sans", "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 99px;
+  width: 75%;
+  line-height: 1;
+  pointer-events: none;
+  box-sizing: content-box;
+  height: 80px;
+  position: relative;
+  margin-right: 5px;
+}
+
+@media (min-width: 720px) {
+  .clubs .club a {
+    position: absolute;
+    bottom: 35px;
+    margin-right: 0;
+    height: 40px;
+    border: 1px solid #ccc;
+  }
+}
+
+.clubs .club a .club__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: url("https://www.clarin.com/redaccionfiler/clarin/desarrollo/2020/deportes/superliga/escudos/icon-plantel.svg")
+    no-repeat center top;
+  padding: 24px 0 3px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+@media (min-width: 720px) {
+  .clubs .club a .club__icon {
+    height: 20px;
+    padding: 0 0 0 40px;
+    background-position: 0% 20%;
+    border-bottom: none;
+  }
+}
+
+.clubs .club a .club__total {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 24px;
+  width: 24px;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+  border-radius: 100%;
+  background-color: #fff;
+  color: #009bdb;
+  border: 1px solid #009bdb;
+  font-weight: 400;
+  font-size: 13px;
+  transition: 0.3s;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  font-weight: 700;
+}
+
+@media (min-width: 720px) {
+  .clubs .club a .club__total {
+    background: #fff;
+    font-weight: 400;
+    color: #009bdb;
+    border: 1px solid #fff;
+    position: relative;
+    top: 0;
+    margin: 0 0 0 10px;
+  }
+}
+
+@keyframes show-result {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

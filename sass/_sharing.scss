@@ -1,0 +1,65 @@
+.especial__shareo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+
+  z-index: 2;
+  width: 200px;
+
+  padding: 0 0 0 0;
+  margin: 0 auto 60px auto;
+  text-align: center;
+
+  ul {
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 0 5px;
+      vertical-align: middle;
+
+      a {
+        width: 48px;
+        height: 48px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.35s;
+        background-color: rgba($color-dark, $alpha: 0.83) !important;
+
+        &:hover {
+          transition: 0.35s;
+        }
+      }
+    }
+  }
+
+  .share {
+    &-facebook {
+      background: url("#{$URL}/assets/icon-facebook.svg") center center no-repeat;
+    }
+
+    &-facebook:hover {
+      background-color: #3b5998 !important;
+    }
+
+    &-twitter {
+      background: url("#{$URL}/assets/icon-twitter.svg") center center no-repeat;
+    }
+
+    &-twitter:hover {
+      background-color: #00aced !important;
+    }
+
+    &-whatsapp {
+      background: url("#{$URL}/assets/icon-whatsapp.svg") center center no-repeat;
+    }
+
+    &-whatsapp:hover {
+      background-color: #25d366 !important;
+    }
+  }
+}
